@@ -7,6 +7,7 @@ import { Status } from "./Status";
 import { Header } from "./Header";
 import { Oscar } from "./Oscar";
 import { Button } from "./Button";
+import { Input } from "./Input";
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
           console.log("Button Clicked", event, id);
         }}
       />
+      <Input value="" handleChange={(event) => console.log(event)} />
     </div>
   );
 }
