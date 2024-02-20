@@ -3,7 +3,7 @@ import './App.css';
 import { Greet } from './Greet';
 import { Person } from './Person';
 import { PersonList } from './PersonList';
-
+import { Status } from './Status';
 function App() {
   
   const personName={
@@ -29,10 +29,8 @@ function App() {
   return (
     <div className="App">
   
-     <Greet name="Hari" messageCount={20} isloggedIn={false}/>
-     <Person name={personName}/>
-     <PersonList names={nameList}/>
-
+     <Status status='error'/>
+      
 
     </div>
   );
