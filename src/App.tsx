@@ -6,26 +6,8 @@ import { PersonList } from "./PersonList";
 import { Status } from "./Status";
 import { Header } from "./Header";
 import { Oscar } from "./Oscar";
+import { Button } from "./Button";
 function App() {
-  const personName = {
-    first: "Bruce",
-    last: "Wayne",
-  };
-  const nameList = [
-    {
-      first: "Bruce",
-      last: "Wayne",
-    },
-    {
-      first: "Clark",
-      last: "Kent",
-    },
-    {
-      first: "Princess",
-      last: "Diana",
-    },
-  ];
-
   return (
     <div className="App">
       <Status status="error" />
@@ -36,6 +18,11 @@ function App() {
         <h3>This jsx elements are sent as props</h3>
       </Oscar>
       <Greet name="Hari" messageCount={0} isLoggedIn={true} />
+      <Button
+        handleClick={(event, id) => {
+          console.log("Button Clicked", event, id);
+        }}
+      />
     </div>
   );
 }
