@@ -6,6 +6,7 @@ type AuthUser = {
 };
 
 export const User = () => {
+  // const [user, setUser] = useState({} as AuthUser); type assertion
   const [user, setUser] = useState<AuthUser | null>(null);
   const handleLogin = () => {
     setUser({ name: "John", email: "3Xz7S@example.com" });
