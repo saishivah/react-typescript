@@ -11,7 +11,7 @@ export const Status = (props: StatusProps) => {
     message = "Error fetching data";
   }
 
-    let message
+  
     if(props.status==='loading'){
         message='Loading..'
     }
