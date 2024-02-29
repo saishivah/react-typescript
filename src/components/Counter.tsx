@@ -24,7 +24,7 @@ const reducer = (state: CounterState, action: CounterAction) => {
 const initialState = { count: 0 };
 
 // Component using useReducer
-const Counter = () => {
+export const Counter = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
