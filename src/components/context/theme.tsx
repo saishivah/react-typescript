@@ -4,7 +4,7 @@ export const theme = {
     text: "white",
   },
   secondary: {
-    background: "white",
+    main: "white",
     text: "black",
   },
 };

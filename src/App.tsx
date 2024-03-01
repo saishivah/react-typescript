@@ -47,7 +47,7 @@ function App() {
         ></Container>
         <Counter />
         <Box />
-        {/* Here we are using context for box and setting t */}
+        {/* Here we are using context for box and setting up the theme in theme context */}
       </ThemeContextProvider>
     </div>
   );
